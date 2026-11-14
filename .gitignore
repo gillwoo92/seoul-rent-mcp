@@ -1,15 +1,66 @@
-# 비밀 정보 (API 키 등) — 견본 파일만 올림
+# ===== 비밀 정보: API 키·토큰·비밀번호 (견본 .env.example 만 올림) =====
 .env
 .env.*
 !.env.example
+*.env
+.secret*
+secrets*
+*.secret
+credentials*.json
+*credentials*
+service-account*.json
+client_secret*.json
+token.json
+.netrc
+.npmrc
+.pypirc
+.git-credentials
 
-# Python
-.venv
-__pycache__
-*.pyc
+# 인증서 / 개인키
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.ppk
 
-# 기타
-.claude/settings.local.json
+# ===== 의존성 =====
+node_modules/
+
+# ===== Python =====
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 *.log
-.DS_Store
+
+# ===== 로컬 개인 설정 =====
+.claude/settings.local.json
+.vscode/settings.json
+.idea/
+
+# ===== Windows 시스템 파일 =====
 Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# ===== macOS 시스템 파일 =====
+.DS_Store
+._*
